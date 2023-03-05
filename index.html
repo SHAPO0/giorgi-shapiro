@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="left">
+                <img class="fb_logo _8ilh img" 
+                src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" 
+                alt="Facebook">
+                <p>Connect with friends and the world<br>around you on Facebook.</p>
+            </div>
+            <div class="right">
+                <form action="">
+                    <div class="form_body"></div>
+                </form>
+                <div class="foot">
+                <p><span>Create a Page</span> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </header>
+ <script>
+
+        function findContent(event) {
+            console.log(event.target.innerHTML);
+        }
+
+        var emailInput = document.createElement('input');
+        emailInput.setAttribute('type', 'text');
+        emailInput.setAttribute('placeholder', 'Email or phone number');
+    
+        var passwordInput = document.createElement('input');
+        passwordInput.setAttribute('type', 'password');
+        passwordInput.setAttribute('placeholder', 'Password');
+    
+        var loginBtn = document.createElement('button');
+        loginBtn.addEventListener('onclick', findContent);
+        loginBtn.innerHTML = 'Log In';
+        loginBtn.classList.add("login");
+    
+        var forgotDiv = document.createElement('div');
+        forgotDiv.classList.add("forgot");
+    
+        var forgotPasswordLink = document.createElement('a');
+        forgotPasswordLink.innerHTML = 'Forgot password?';
+        forgotPasswordLink.setAttribute('href', 'https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc3OTUxMzgzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login');
+    
+        forgotDiv.appendChild(forgotPasswordLink);
+
+        var hrElement = document.createElement('hr');
+
+        var createBtn = document.createElement('button');
+        createBtn.addEventListener('click', findContent);
+        createBtn.innerHTML = 'Create new account';
+        createBtn.classList.add("create");
+
+    
+        var parentContainer = document.getElementsByClassName('form_body');
+        parentContainer[0].appendChild(emailInput);
+        parentContainer[0].appendChild(passwordInput);
+        parentContainer[0].appendChild(loginBtn);
+        parentContainer[0].appendChild(forgotDiv);
+        parentContainer[0].appendChild(hrElement);
+        parentContainer[0].appendChild(createBtn);
+        
+
+        
+    
+    </script>
+</body>
+</html>

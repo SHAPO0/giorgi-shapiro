@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: #F0F2F5;
+    position: relative;
+}
+
+header .main {
+    position: absolute;
+    top: 25%;
+    width: 70%;
+    display: flex;
+    gap: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+header .main .left {
+    flex: 1;
+    justify-content: left;
+}
+
+header .main .right {
+    flex: 1;
+}
+
+header .main .left p {
+    font-size: 28px;
+    letter-spacing: 0.2px;
+    margin-left: 28px;
+    margin-top: -14px;
+    font-weight: 400;
+}
+
+header .main .left img {
+    height: 106px;
+    width: 301px;
+}
+
+header .main .right form {
+    background: #fff;
+    width: 396px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px 0 28px;
+    border-radius: 8px;
+    margin-top: -50px;
+}
+
+.form_body {
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+
+}
+form input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px;
+    border-radius: 5px;
+    outline-color: #8AB7EF;
+}
+
+.login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 100%;
+    padding: 0 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.show{
+    background-color: #42b72a;
+  border: none;
+  color: white;
+  padding: 0 16px;
+  width: 245px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.create{
+    background-color:#42b72a ;
+    border: none;
+    border-radius: 8px;
+    width: 210px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 80px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+hr{
+    margin-top: 18px;
+}
+.forgot{
+    color: #1877f2;
+    text-align: center;
+    
+}
+.foot{
+    margin-top:15px ;
+    margin-left: 40px;
+}
+p{
+    color: black;
+    font-size: -20px;
+    font-weight: 600px;
+}
